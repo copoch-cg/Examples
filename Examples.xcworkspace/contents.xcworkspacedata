@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:NewWorld/NewWorld.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Triangles/Triangles.xcodeproj">
+   </FileRef>
+</Workspace>
