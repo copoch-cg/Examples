@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:RBTriangles/RBTriangles.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:NewWorld/NewWorld.xcodeproj">
    </FileRef>
    <FileRef
