@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		629DB2981F4C4C0C00D00118 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 629DB2971F4C4C0C00D00118 /* glad.c */; };
+		629DB29D1F4C5F4000D00118 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 629DB28B1F4C317600D00118 /* libglfw3.a */; };
+		629DB29F1F4C650E00D00118 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629DB29E1F4C650E00D00118 /* OpenGL.framework */; };
+		629DB2A11F4C65B800D00118 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629DB2A01F4C65B700D00118 /* IOKit.framework */; };
+		629DB2A31F4C65BE00D00118 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629DB2A21F4C65BE00D00118 /* CoreVideo.framework */; };
+		629DB2A61F4D246500D00118 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629DB2A41F4C65C200D00118 /* Cocoa.framework */; };
+		629DB2A81F4D30B400D00118 /* LoadShaders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 629DB2A71F4D30B400D00118 /* LoadShaders.cpp */; };
 		629E723B1F4C11A3002B0D8D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 629E723A1F4C11A3002B0D8D /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -14,7 +21,7 @@
 		629E72351F4C11A3002B0D8D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
+			dstPath = /usr/share/man/man1;
 			dstSubfolderSpec = 0;
 			files = (
 			);
@@ -23,6 +30,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		629DB28B1F4C317600D00118 /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = ../../../../../../../usr/local/lib/libglfw3.a; sourceTree = "<group>"; };
+		629DB2971F4C4C0C00D00118 /* glad.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = glad.c; path = ../lib/glad.c; sourceTree = "<group>"; };
+		629DB29E1F4C650E00D00118 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		629DB2A01F4C65B700D00118 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		629DB2A21F4C65BE00D00118 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		629DB2A41F4C65C200D00118 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		629DB2A71F4D30B400D00118 /* LoadShaders.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = LoadShaders.cpp; path = ../lib/LoadShaders.cpp; sourceTree = "<group>"; };
 		629E72371F4C11A3002B0D8D /* Triangles */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Triangles; sourceTree = BUILT_PRODUCTS_DIR; };
 		629E723A1F4C11A3002B0D8D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,17 +46,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				629DB2A61F4D246500D00118 /* Cocoa.framework in Frameworks */,
+				629DB2A31F4C65BE00D00118 /* CoreVideo.framework in Frameworks */,
+				629DB2A11F4C65B800D00118 /* IOKit.framework in Frameworks */,
+				629DB29F1F4C650E00D00118 /* OpenGL.framework in Frameworks */,
+				629DB29D1F4C5F4000D00118 /* libglfw3.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		629DB28A1F4C317600D00118 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				629DB2A41F4C65C200D00118 /* Cocoa.framework */,
+				629DB2A21F4C65BE00D00118 /* CoreVideo.framework */,
+				629DB2A01F4C65B700D00118 /* IOKit.framework */,
+				629DB29E1F4C650E00D00118 /* OpenGL.framework */,
+				629DB28B1F4C317600D00118 /* libglfw3.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		629E722E1F4C11A3002B0D8D = {
 			isa = PBXGroup;
 			children = (
+				629DB2A71F4D30B400D00118 /* LoadShaders.cpp */,
+				629DB2971F4C4C0C00D00118 /* glad.c */,
 				629E72391F4C11A3002B0D8D /* Triangles */,
 				629E72381F4C11A3002B0D8D /* Products */,
+				629DB28A1F4C317600D00118 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,6 +154,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				629DB2A81F4D30B400D00118 /* LoadShaders.cpp in Sources */,
+				629DB2981F4C4C0C00D00118 /* glad.c in Sources */,
 				629E723B1F4C11A3002B0D8D /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,8 +256,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = UEN8VGF32F;
-				HEADER_SEARCH_PATHS = "";
-				LIBRARY_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					"${PROJECT_DIR}/../include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					"${PROJECT_DIR}/../lib",
+				);
+				OTHER_LDFLAGS = "-IGLFW";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -230,8 +273,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = UEN8VGF32F;
-				HEADER_SEARCH_PATHS = "";
-				LIBRARY_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					"${PROJECT_DIR}/../include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					"${PROJECT_DIR}/../lib",
+				);
+				OTHER_LDFLAGS = "-IGLFW";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -255,6 +305,7 @@
 				629E72401F4C11A3002B0D8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
