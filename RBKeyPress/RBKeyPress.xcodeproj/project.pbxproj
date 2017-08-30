@@ -1,0 +1,310 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6294A7E11F4EA0CE00B04B48 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6294A7E01F4EA0CE00B04B48 /* main.cpp */; };
+		6294A7E91F4EA0F600B04B48 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6294A7E81F4EA0F600B04B48 /* OpenGL.framework */; };
+		6294A7EB1F4EA0FC00B04B48 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6294A7EA1F4EA0FC00B04B48 /* IOKit.framework */; };
+		6294A7ED1F4EA10100B04B48 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6294A7EC1F4EA10100B04B48 /* Cocoa.framework */; };
+		6294A7EF1F4EA11000B04B48 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6294A7EE1F4EA11000B04B48 /* CoreVideo.framework */; };
+		6294A7F11F4EA11D00B04B48 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6294A7F01F4EA11D00B04B48 /* libglfw3.a */; };
+		6294A7F41F4EA27100B04B48 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 6294A7F21F4EA27100B04B48 /* glad.c */; };
+		6294A7F51F4EA27100B04B48 /* LoadShaders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6294A7F31F4EA27100B04B48 /* LoadShaders.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6294A7DB1F4EA0CE00B04B48 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6294A7DD1F4EA0CE00B04B48 /* RBKeyPress */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RBKeyPress; sourceTree = BUILT_PRODUCTS_DIR; };
+		6294A7E01F4EA0CE00B04B48 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		6294A7E81F4EA0F600B04B48 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		6294A7EA1F4EA0FC00B04B48 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		6294A7EC1F4EA10100B04B48 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		6294A7EE1F4EA11000B04B48 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		6294A7F01F4EA11D00B04B48 /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = ../../../../../../../usr/local/lib/libglfw3.a; sourceTree = "<group>"; };
+		6294A7F21F4EA27100B04B48 /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glad.c; path = ../lib/glad.c; sourceTree = "<group>"; };
+		6294A7F31F4EA27100B04B48 /* LoadShaders.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LoadShaders.cpp; path = ../lib/LoadShaders.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6294A7DA1F4EA0CE00B04B48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6294A7F11F4EA11D00B04B48 /* libglfw3.a in Frameworks */,
+				6294A7EF1F4EA11000B04B48 /* CoreVideo.framework in Frameworks */,
+				6294A7ED1F4EA10100B04B48 /* Cocoa.framework in Frameworks */,
+				6294A7EB1F4EA0FC00B04B48 /* IOKit.framework in Frameworks */,
+				6294A7E91F4EA0F600B04B48 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6294A7D41F4EA0CE00B04B48 = {
+			isa = PBXGroup;
+			children = (
+				6294A7F21F4EA27100B04B48 /* glad.c */,
+				6294A7F31F4EA27100B04B48 /* LoadShaders.cpp */,
+				6294A7DF1F4EA0CE00B04B48 /* RBKeyPress */,
+				6294A7DE1F4EA0CE00B04B48 /* Products */,
+				6294A7E71F4EA0F500B04B48 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6294A7DE1F4EA0CE00B04B48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6294A7DD1F4EA0CE00B04B48 /* RBKeyPress */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6294A7DF1F4EA0CE00B04B48 /* RBKeyPress */ = {
+			isa = PBXGroup;
+			children = (
+				6294A7E01F4EA0CE00B04B48 /* main.cpp */,
+			);
+			path = RBKeyPress;
+			sourceTree = "<group>";
+		};
+		6294A7E71F4EA0F500B04B48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6294A7F01F4EA11D00B04B48 /* libglfw3.a */,
+				6294A7EE1F4EA11000B04B48 /* CoreVideo.framework */,
+				6294A7EC1F4EA10100B04B48 /* Cocoa.framework */,
+				6294A7EA1F4EA0FC00B04B48 /* IOKit.framework */,
+				6294A7E81F4EA0F600B04B48 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6294A7DC1F4EA0CE00B04B48 /* RBKeyPress */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6294A7E41F4EA0CE00B04B48 /* Build configuration list for PBXNativeTarget "RBKeyPress" */;
+			buildPhases = (
+				6294A7D91F4EA0CE00B04B48 /* Sources */,
+				6294A7DA1F4EA0CE00B04B48 /* Frameworks */,
+				6294A7DB1F4EA0CE00B04B48 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RBKeyPress;
+			productName = RBKeyPress;
+			productReference = 6294A7DD1F4EA0CE00B04B48 /* RBKeyPress */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6294A7D51F4EA0CE00B04B48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Copoch;
+				TargetAttributes = {
+					6294A7DC1F4EA0CE00B04B48 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = UEN8VGF32F;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6294A7D81F4EA0CE00B04B48 /* Build configuration list for PBXProject "RBKeyPress" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6294A7D41F4EA0CE00B04B48;
+			productRefGroup = 6294A7DE1F4EA0CE00B04B48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6294A7DC1F4EA0CE00B04B48 /* RBKeyPress */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6294A7D91F4EA0CE00B04B48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6294A7E11F4EA0CE00B04B48 /* main.cpp in Sources */,
+				6294A7F51F4EA27100B04B48 /* LoadShaders.cpp in Sources */,
+				6294A7F41F4EA27100B04B48 /* glad.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6294A7E21F4EA0CE00B04B48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		6294A7E31F4EA0CE00B04B48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6294A7E51F4EA0CE00B04B48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = UEN8VGF32F;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					"${PROJECT_DIR}/../include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					"${PROJECT_DIR}/../lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6294A7E61F4EA0CE00B04B48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = UEN8VGF32F;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					"${PROJECT_DIR}/../include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					"${PROJECT_DIR}/../lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6294A7D81F4EA0CE00B04B48 /* Build configuration list for PBXProject "RBKeyPress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6294A7E21F4EA0CE00B04B48 /* Debug */,
+				6294A7E31F4EA0CE00B04B48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6294A7E41F4EA0CE00B04B48 /* Build configuration list for PBXNativeTarget "RBKeyPress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6294A7E51F4EA0CE00B04B48 /* Debug */,
+				6294A7E61F4EA0CE00B04B48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6294A7D51F4EA0CE00B04B48 /* Project object */;
+}
